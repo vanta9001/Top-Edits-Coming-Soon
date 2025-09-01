@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Top Edits</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon/favicon.png" type="image/png" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
 
@@ -29,23 +34,20 @@
       }
     }
   </script>
-  
 </head>
 
 <body class="font-Noto-Sans">
 
-  
   <!-- Header -->
-  <header class="w-full bg-[url('assets/img/leaves.jpg')] bg-cover bg-bottom">  
+  <header class="w-full bg-[url('assets/img/leaves.jpg')] bg-cover bg-bottom">
     <div class="w-full min-h-screen md:w-1/2 bg-gradient-to-b from-gray-900/90 to-gray-900/95 p-10 flex">
       <div class="w-full text-center my-auto">
         <h1 class="font-bold text-5xl font-Comforter-Brush text-amber-500 mb-10 md:text-right">Top Edits</h1>
         <h6 class="font-Montserrat font-bold uppercase text-4xl md:text-5xl lg:text-6xl mb-14 md:-mr-20 text-white md:text-right">Coming <span class="text-white/70 md:-mr-20">soon</span></h6>
 
-        
         <!-- Count down -->
         <div class="w-full text-left flex mb-10">
-          <ul class="w-full flex place-content-center md:place-content-end gap-5 mx-auto text-gray-50">        
+          <ul class="w-full flex place-content-center md:place-content-end gap-5 mx-auto text-gray-50">
             <li>
               <div class="font-bold text-white rounded-full border-dotted border-gray-700 border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24" id="cdD">120</div>
               <p class="text-center text-xs mt-2">Days</p>
@@ -65,7 +67,6 @@
               <div class="font-bold text-white rounded-full border-dotted border-gray-700 border-4 flex items-center justify-center text-2xl lg:text-4xl h-16 lg:h-24 w-16 lg:w-24" id="cdS">00</div>
               <p class="text-center text-xs mt-2">Seconds</p>
             </li>
-
           </ul>
         </div>
 
@@ -74,23 +75,27 @@
 
         <!-- Social media -->
         <div class="w-full text-left flex">
-          <ul class="w-full flex place-content-center md:place-content-end gap-10 mx-auto text-gray-500">        
-
+          <ul class="w-full flex place-content-center md:place-content-end gap-10 mx-auto text-gray-500">
             <li>
-              <a href="https://github.com/Axion-Industries" class="text-lg hover:text-amber-500">
+              <a href="https://github.com/Axion-Industries" target="_blank" rel="noopener noreferrer" class="text-lg hover:text-amber-500" aria-label="GitHub">
                 <i class="fab fa-github"></i>
               </a>
             </li>
 
             <li>
-              <a href="https://threads.net/@bogdanzogovic123" class="text-lg hover:text-amber-500">
-                <img src="https://cdn.simpleicons.org/threads/000000" alt="Threads" class="w-6 h-6" />
+              <!-- Inline SVG uses currentColor so it inherits text color and hover color from the anchor -->
+              <a href="https://threads.net/@bogdanzogovic123" target="_blank" rel="noopener noreferrer" class="text-lg hover:text-amber-500" aria-label="Threads">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <!-- Outline circle -->
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <!-- stylized hook / thread mark -->
+                  <path d="M12 2v6a4 4 0 1 0 4 4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </a>
             </li>
 
-
             <li>
-              <a href="https://instagram.com/@bogdanzogovic123" class="text-lg hover:text-amber-500">
+              <a href="https://instagram.com/bogdanzogovic123" target="_blank" rel="noopener noreferrer" class="text-lg hover:text-amber-500" aria-label="Instagram">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
@@ -99,49 +104,55 @@
         </div>
 
       </div>
-    </div>   
-  </header>  
+    </div>
+  </header>
 
   <script>
-    // Change the value of countDownEndDate to the day you want to end the count down
-    var countDownEndDate = "January 1, 2025 02:00:00";
-    
+    // TARGET: January 1, 2026 at 01:00:00 (local browser timezone)
+    var countDownEndDate = "January 1, 2026 01:00:00";
+
     var endDate = new Date(countDownEndDate).getTime();
-    
-    var x = setInterval(function() {
-    
-      var timeNow = new Date().getTime();
-    
-      var timeLeft = endDate - timeNow;
-    
-      var days    = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-      var hours   = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    // update function (run immediately and every second)
+    function updateCountdown() {
+      var now = new Date().getTime();
+      var timeLeft = endDate - now;
+
+      if (timeLeft <= 0) {
+        // countdown finished: set everything to 00 (days set to "00")
+        document.getElementById("cdD").textContent = "00";
+        document.getElementById("cdH").textContent = "00";
+        document.getElementById("cdM").textContent = "00";
+        document.getElementById("cdS").textContent = "00";
+        // stop the interval (if running)
+        if (window._countdownInterval) {
+          clearInterval(window._countdownInterval);
+          window._countdownInterval = null;
+        }
+        return;
+      }
+
+      var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-      if(days < 10) {
-        days = "0" + days;
-      }
+      // pad single digits with leading zero for H/M/S; leave days as-is unless <10
+      if (hours < 10) hours = "0" + hours;
+      if (minutes < 10) minutes = "0" + minutes;
+      if (seconds < 10) seconds = "0" + seconds;
+      if (days < 10) days = "0" + days;
 
-      if(hours < 10) {
-        hours = "0" + hours;
-      }
+      document.getElementById("cdD").textContent = days;
+      document.getElementById("cdH").textContent = hours;
+      document.getElementById("cdM").textContent = minutes;
+      document.getElementById("cdS").textContent = seconds;
+    }
 
-      if(minutes < 10) {
-        minutes = "0" + minutes;
-      }
-
-      if(seconds < 10) {
-        seconds = "0" + seconds;
-      }
-    
-      if (timeLeft > 0) {
-        document.getElementById("cdD").innerHTML = days;
-        document.getElementById("cdH").innerHTML = hours;
-        document.getElementById("cdM").innerHTML = minutes;
-        document.getElementById("cdS").innerHTML = seconds;
-      }
-    }, 1000);
+    // run once immediately
+    updateCountdown();
+    // then run every second
+    window._countdownInterval = setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>
