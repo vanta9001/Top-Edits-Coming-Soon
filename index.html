@@ -82,17 +82,26 @@
               </a>
             </li>
 
-            <li>
-              <!-- Inline SVG uses currentColor so it inherits text color and hover color from the anchor -->
-              <a href="https://threads.net/@bogdanzogovic123" target="_blank" rel="noopener noreferrer" class="text-lg hover:text-amber-500" aria-label="Threads">
-                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <!-- Outline circle -->
-                  <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                  <!-- stylized hook / thread mark -->
-                  <path d="M12 2v6a4 4 0 1 0 4 4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </li>
+<li>
+  <a href="https://threads.net/@bogdanzogovic123"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="text-lg hover:text-amber-500"
+     aria-label="Threads">
+
+    <!-- image used as a mask so it inherits currentColor and responds to hover -->
+    <span
+      class="w-6 h-6 inline-block"
+      style="background-color: currentColor;
+             -webkit-mask: url('assets/img/threads.png') no-repeat center / contain;
+             mask: url('assets/img/threads.png') no-repeat center / contain;"
+      aria-hidden="true"></span>
+
+    <!-- accessible label for screen-readers -->
+    <span class="sr-only">Threads</span>
+  </a>
+</li>
+
 
             <li>
               <a href="https://instagram.com/bogdanzogovic123" target="_blank" rel="noopener noreferrer" class="text-lg hover:text-amber-500" aria-label="Instagram">
